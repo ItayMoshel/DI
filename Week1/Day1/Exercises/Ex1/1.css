@@ -1,0 +1,42 @@
+img {
+    height: 400px;
+    width: 500px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: orange;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+h3:not(#s) {
+    display: flex;
+    justify-content: center;
+}
+
+.container > p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: red;
+    color: red;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+td {
+    padding: 25px 3px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}

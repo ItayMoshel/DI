@@ -1,0 +1,71 @@
+body {
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #00002a;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+.icon {
+    position: relative;
+    left: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.bannerdiv {
+    display: flex;
+    align-items: flex-start;
+    height: 375px;
+    width: 183px;
+    margin: 35px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00002a;
+    border-radius: 5px;
+}
+
+.title {
+    position: relative;
+    top: 300px;
+    right: 130px;
+    font-size: 0.7em;
+}
+
+.moviebanner {
+    height: 275px;
+    width: 183px;
+    border-radius: 5px;
+}
+
+.ancor {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 400 bold;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: -100px;
+}
+
+.director a {
+    color: inherit;
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-color: gray;
+    width: 400px;
+    height: 100px;
+    border: 50px greenyellow;
+}
+#No1{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: blue;
+    width: 70px;
+    height: 70px;
+}
+#No2{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: orange;
+    width: 70px;
+    height: 70px;
+}

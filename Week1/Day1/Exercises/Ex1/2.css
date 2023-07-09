@@ -1,0 +1,75 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+}
+
+#One {
+    height: 700px;
+    width: 100%;
+    background-image: url("https://thumbs.dreamstime.com/z/trendy-abstract-liquid-blue-background-your-landing-page-design-minimal-website-designs-231884001.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    color: darkslategray;
+    margin-left: 150px;
+}
+
+button {
+    margin-right: 150px;
+    background-color: darkcyan;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input > input {
+    margin: 50px 15px 50px 100px;
+}
+
+.subcon {
+    font-size: 75px;
+}
+
+#Two {
+    background-color: gainsboro;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.Cube {
+    padding: 25px;
+}
+
+.Cube > i {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.Cube > h4 {
+    display: flex;
+    justify-content: center;
+}
