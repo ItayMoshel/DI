@@ -1,0 +1,174 @@
+body {
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.card1 {
+    height: 500px;
+    width: 400px;
+    /* padding: 50px; */
+    background-color: ghostwhite;
+    position: relative;
+    top: 100px;
+}
+
+.card1 > span {
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: 40px;
+}
+
+form > input {
+    border: none;
+    background-color: lightgray;
+    padding: 10px;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card2 {
+    background-image: linear-gradient(to bottom right, black, purple);
+    opacity: 0.85;
+    height: 400px;
+    width: 300px;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.card2 > form {
+    position: relative;
+    top: 40px;
+}
+
+.card2 > form > i {
+    font-size: 60px;
+    position: relative;
+    top: 40px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#Fpass {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#social {
+    text-align: center;
+    text-decoration: underline;
+}
+
+button:not(car2 > button) {
+    margin-top: 15px;
+}
+
+#Logbutton {
+    border: none;
+    background-color: purple;
+    padding: 10px;
+    width: 220px;
+    color: white;
+    font-size: 10px;
+}
+
+#Rbutton {
+    border-color: white;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: rgba(128, 0, 128, 0.1);
+    color: white;
+    padding: 10px 15px;
+}
+
+#signupheader {
+    color: purple;
+    position: relative;
+    top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-github {
+    background: black;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  
