@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.con {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+
+#d1 {
+    background-color: aquamarine;
+    flex: 1;
+}
+
+#d2 {
+    background-color: antiquewhite;
+    flex: 5;
+}
+
+#d3 {
+    color: white;
+    background-color: black;
+    flex: 5;
+}

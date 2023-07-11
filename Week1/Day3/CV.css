@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 20px 0px 0px;
+
+}
+
+.navbar > * {
+    padding-left: 20px;
+}
+
+#Logo {
+    flex: 1;
+}
+
+#N > span {
+    font-size: 20px;
+    padding: 2px 10px;
+    margin-right: 1px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+
+#One {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#One > .container {
+    display: flex;
+    justify-content: center;
+}
+
+.Photo > img {
+    height: 280px;
+    width: 260px;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+#S {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#Two {
+    height: 600px;
+}
+
+#Two > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin: 20px;
+}
+
+.x {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.x1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    display: flex;
+}
+
+.x1:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.x1 > * {
+    margin: 10px;
+}
+
+.x2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    display: flex;
+}
+
+.x2:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.x2 > * {
+    margin: 10px;
+}
+
+.x3 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+    display: flex;
+}
+
+.x3:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.x3 > * {
+    margin: 10px;
+}
+
+.x4 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+    display: flex;
+}
+
+.x4:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.x4 > * {
+    margin: 10px;
+}
+

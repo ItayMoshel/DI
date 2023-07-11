@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex: 1 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.div1 {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    flex-basis: 35%;
+    width: 100%;
+    color: white;
+    font-size: 60px;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 1;
+    background-color: aqua;
+    flex-basis: 26%;
+    width: 30%;
+    color: white;
+    font-size: 60px;
+}
+
+.div3 {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    flex-basis: 35%;
+    width: 100%;
+    color: white;
+    font-size: 60px;
+}
