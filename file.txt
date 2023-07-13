@@ -1,0 +1,26 @@
+#!/bin/bash
+
+RootDir=$(pwd)
+SubA=$(seq 12)
+SubB=$(seq 5)
+VarA="Week"
+VarB="Day"
+
+for i in $SubA
+do
+	for j in $SubB
+	do
+		mkdir -p $VarA$i/$VarB$j
+	done
+done
+
+for i in $SubA
+do
+	echo "$VarA$i"
+done
+
+for i in $SubB
+do
+	echo "$VarB$i"
+done
+
