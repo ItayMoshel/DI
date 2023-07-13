@@ -1,0 +1,24 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#middle {
+    display: flex;
+    align-items: center;
+}
+
+#middle > .square {
+    margin: 20px;
+}
+
+.square {
+    height: 60px;
+    width: 60px;
+    background-color: yellow;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 10px;
+}

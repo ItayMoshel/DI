@@ -1,0 +1,40 @@
+#Container {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: rgba(255, 0, 0, 0.6);
+    border-width: 2px;
+    border-style: solid;
+}
+
+.Block {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Square {
+    height: 50px;
+    width: 50px;
+}
+
+.Square:first-child {
+    background-color: white;
+}
+
+.Square:nth-child(2) {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.Square:nth-child(3) {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.Square:last-child {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+
+

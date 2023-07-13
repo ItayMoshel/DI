@@ -1,0 +1,35 @@
+#Container {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.Line {
+    display: flex;
+    height: 50px;
+    width: 200px;
+}
+
+.Square {
+    width: 42px;
+    height: 42px;
+    margin: 4px;
+}
+
+.Square:first-child {
+    background-color: gainsboro;
+}
+
+.Square:nth-child(2) {
+    background-color: darkgray;
+}
+
+.Square:nth-child(3) {
+    background-color: gray;
+}
+
+.Square:last-child {
+    background-color: black;
+}

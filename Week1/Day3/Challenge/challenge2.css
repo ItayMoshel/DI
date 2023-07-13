@@ -1,0 +1,57 @@
+#Container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Block {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Square {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.Square:first-child {
+    background-color: black;
+}
+
+.Square:last-child {
+    background-color: blue;
+}
+
+.Square:nth-child(2) {
+    background-color: blue;
+}
+
+.Square:nth-child(3) {
+    background-color: chocolate;
+}
+
+.Square:nth-child(4) {
+    background-color: blue;
+}
+
+.Square:nth-child(5) {
+    background-color: chocolate;
+}
+
+.Square:nth-child(6) {
+    background-color: black;
+}
+
+.Square:nth-child(7) {
+    background-color: chocolate;
+}
+
+.Square:nth-child(8) {
+    background-color: black;
+}
+

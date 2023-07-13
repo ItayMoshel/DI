@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#Sec1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+#Sec2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+@media (min-width: 1280px) {
+    #Sec2 {
+        position: relative;
+        right: 70px;
+    }
+}
+
+.Num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+#Sec3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.Card {
+    width: 300px;
+    height: 240px;
+    margin: 30px;
+}
+
+.Card > div:first-child {
+    height: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Card > div:last-child {
+    height: 40%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Card > div:last-child > * {
+    position: relative;
+    bottom: 25px;
+}
+
+#Circle {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 1280px) {
+    #Crocked {
+        position: relative;
+        top: 80px;
+    }
+
+}

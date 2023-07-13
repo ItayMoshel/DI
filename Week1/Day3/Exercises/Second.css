@@ -1,0 +1,88 @@
+* {
+    padding: 0px;    
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+    #Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 71, 35);
+    color: white;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#Navbar > button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+#Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Head {
+    margin: 50px;
+}
+
+#Form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    width: 500px;
+}
+
+.Section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-left: 30px;
+}
+
+.Sone {
+    display: flex;
+    justify-content: center;
+}
+
+.Stwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Input {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.Input2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+select {
+    width: 440px;
+}
+
+#Q {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: relative;
+    left: 7px;
+}
+
+#O {
+    align-self: flex-start;
+}

@@ -1,0 +1,33 @@
+
+
+table{
+	border: solid black 2px;
+}
+
+
+thead, tbody{
+	border: solid black 2px;
+
+}
+
+img{
+	height: 100px;
+	width: 100px;
+	border: solid black 1px;
+
+}
+
+
+
+h4{
+	color: blue;
+}
+
+.col-3{
+	background-color: lightgrey;
+}
+
+
+h2{
+	color: grey;
+}
