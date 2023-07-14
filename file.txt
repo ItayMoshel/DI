@@ -1,16 +1,18 @@
 #!/bin/bash
 
 RootDir=$(pwd)
-SubA=$(seq 12)
+SubA=$(seq 2 12)
 SubB=$(seq 5)
 VarA="Week"
 VarB="Day"
+VarC="Exercises"
+VarD="Challenges"
 
 for i in $SubA
 do
 	for j in $SubB
 	do
-		mkdir -p $VarA$i/$VarB$j
+		mkdir -p $VarA$i/$VarB$j/{$VarC,$VarD}
 	done
 done
 
@@ -23,4 +25,3 @@ for i in $SubB
 do
 	echo "$VarB$i"
 done
-
