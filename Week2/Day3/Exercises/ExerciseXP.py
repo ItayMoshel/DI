@@ -1,3 +1,10 @@
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+
+smth = dict(zip(keys, values))
+print(smth)
+
+
 def ticket_price(age):
     if age < 3:
         return 0
