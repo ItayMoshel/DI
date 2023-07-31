@@ -48,4 +48,3 @@
 -- INNER JOIN payment ON customer.customer_id = payment.customer_id
 -- INNER JOIN staff ON payment.staff_id = staff.staff_id
 -- ORDER BY staff.staff_id;
-
