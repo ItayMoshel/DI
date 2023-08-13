@@ -33,9 +33,7 @@ class Command(BaseCommand):
                 categories = ', '.join(volume_info.get('categories', ['Uncategorized']))
                 thumbnail_url = volume_info.get('imageLinks', {}).get('thumbnail', '')
 
-                # Create a new Book object
                 if published_date is not None:
-                    # Create a new Book object
                     Book.objects.create(
                         title=title,
                         author=authors,
