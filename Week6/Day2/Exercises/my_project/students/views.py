@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from datetime import datetime
+from django.utils import timezone
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -9,7 +10,17 @@ from .serializers import StudentSerializer
 @api_view(['GET', 'POST'])
 def student_list(request):
     if request.method == 'GET':
+        date_joined_param = request.query_params.get('date_joined', None)
+
         students = Student.objects.all()
+
+        if date_joined_param:
+            try:
+                date_joined = datetime.strptime(date_joined_param, '%Y-%m-%d').date()
+                students = students.filter(date_joined=date_joined)
+            except ValueError:
+                return Response({'error': 'Invalid date format'}, status=status.HTTP_400_BAD_REQUEST)
+
         serializer = StudentSerializer(students, many=True)
         return Response(serializer.data)
 
@@ -42,5 +53,3 @@ def student_detail(request, pk):
     elif request.method == 'DELETE':
         student.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-# Create your views here.
