@@ -6,7 +6,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator, MinLeng
 class Book(models.Model):
     title = models.CharField(max_length=200, blank=False)
     author = models.CharField(max_length=255, blank=False)
-    published_date = models.DateField(blank=False)
+    published_date = models.DateField(blank=False, null=True)
     description = models.TextField(blank=False)
     page_count = models.PositiveIntegerField(validators=[MinValueValidator(1)])
     categories = models.CharField(max_length=255)

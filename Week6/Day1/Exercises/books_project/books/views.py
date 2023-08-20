@@ -2,23 +2,26 @@ from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from .models import Book
 from django.views.decorators.csrf import csrf_exempt
+from django.forms.models import model_to_dict
 from django.shortcuts import render
 
 
 def list_books(request):
     books = Book.objects.all()
 
-    book_data = []
-    for book in books:
-        book_data.append({
-            'title': book.title,
-            'author': book.author,
-            'published_date': book.published_date.strftime('%Y-%m-%d'),
-            'description': book.description,
-            'page_count': book.page_count,
-            'categories': book.categories,
-            'thumbnail_url': book.thumbnail_url,
-        })
+    # book_data = []
+    # for book in books:
+    #     book_data.append({
+    #         'title': book.title,
+    #         'author': book.author,
+    #         'published_date': book.published_date.strftime('%Y-%m-%d'),
+    #         'description': book.description,
+    #         'page_count': book.page_count,
+    #         'categories': book.categories,
+    #         'thumbnail_url': book.thumbnail_url,
+    #     })
+
+    book_data = [model_to_dict(book) for book in books]
 
     return JsonResponse(book_data, safe=False)
 
