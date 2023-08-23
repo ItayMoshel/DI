@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform">
+        <label for="noun">Noun:</label><input type="text" id="noun"><br>
+        <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
+        <label for="person">Someone's Name:</label><input type="text" id="person"><br>
+        <label for="verb">Verb:</label><input type="text" id="verb"><br>
+        <label for="place">A place:</label><input type="text" id="place"><br>
+        <button id="lib-button">Lib it!</button>
+    </form>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <button id="shuffle-button">Shuffle Story</button>
+
+    <script>
+        const form = document.getElementById('libform');
+        const storySpan = document.getElementById('story');
+        const shuffleButton = document.getElementById('shuffle-button');
+        
+        const stories = [
+            "Once upon a time, in a <place>, there lived a <adjective> <noun> named <person>. They loved to <verb> all day long.",
+            "In a faraway <place>, there was a <adjective> <noun>. One day, <person> came to visit and they decided to <verb> together.",
+            "<person> found a magical <noun> in a <place>. Whenever they touched it, they would feel <adjective> and start to <verb> uncontrollably.",
+            "Deep in the heart of <place>, a <adjective> <noun> named <person> discovered a hidden <noun>. When they touched it, they could suddenly <verb> like never before."
+        ];
+        
+        function generateStory() {
+            const noun = document.getElementById('noun').value;
+            const adjective = document.getElementById('adjective').value;
+            const person = document.getElementById('person').value;
+            const verb = document.getElementById('verb').value;
+            const place = document.getElementById('place').value;
+            
+            if (noun && adjective && person && verb && place) {
+                const randomStory = stories[Math.floor(Math.random() * stories.length)];
+                const story = randomStory
+                    .replace('<noun>', noun)
+                    .replace('<adjective>', adjective)
+                    .replace('<person>', person)
+                    .replace('<verb>', verb)
+                    .replace('<place>', place);
+                
+                storySpan.textContent = story;
+            }
+        }
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            generateStory();
+        });
+        
+        shuffleButton.addEventListener('click', function() {
+            generateStory();
+        });
+    </script>
+
+ </body>
+</html>
