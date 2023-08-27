@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("circuit-pattern.png");
+    background-color: rgb(74, 44, 74);
+}
+
+header {
+    background-image: url("card-pattern.png");
+    background-color: #00d916;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+
+#search {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.no-results-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #d9534f;
+    display: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
