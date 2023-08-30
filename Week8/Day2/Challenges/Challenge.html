@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Example</title>
+<script>
+  function sendData() {
+    var name = document.getElementById("name").value;
+    var lastName = document.getElementById("last-name").value;
+    var data = {
+      name: name,
+      lastName: lastName
+    };
+    
+    var jsonData = JSON.stringify(data, null, 2);
+    var outputElement = document.getElementById("output");
+    outputElement.textContent = jsonData;
+  }
+</script>
+</head>
+<body>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required>
+    <br>
+    <button type="button" onclick="sendData()">Send</button>
+  </form>
+  
+  <div id="output"></div>
+</body>
+</html>
