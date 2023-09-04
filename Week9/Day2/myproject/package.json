@@ -1,0 +1,11 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "Exercise",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "ItayMoshel",
+  "license": "ISC"
+}
