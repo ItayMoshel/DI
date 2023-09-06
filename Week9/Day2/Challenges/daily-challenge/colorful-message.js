@@ -1,7 +1,7 @@
-const chalk = require('chalk');
+import chalk from "chalk";
 
 function displayColorfulMessage() {
     console.log(chalk.blue('The message is in blue color!'));
 }
 
-module.exports = displayColorfulMessage;
+export default displayColorfulMessage

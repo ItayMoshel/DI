@@ -1,4 +1,5 @@
-const fs = require('fs');
+// const fs = require('fs');
+import fs from 'fs'
 
 function readFile() {
   const filePath = './files/file-data.txt';
@@ -13,4 +14,5 @@ function readFile() {
   });
 }
 
-module.exports = readFile;
+// module.exports = readFile;
+export default readFile
