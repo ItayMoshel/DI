@@ -1,0 +1,84 @@
+html, body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+
+#game-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 
+0.2);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+
+#emoji-container {
+  font-size: 24px;
+}
+
+
+#options {
+  margin-top: 20px;
+}
+
+
+#feedback {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+#leaderboard-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 
+0.2);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+
+#leaderboard-container h2 {
+  margin-top: 0;
+}
+
+
+#playerName {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#submitScore {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+#leaderboard li {
+  list-style: none;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
