@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>Login</title>
+    <script>
+        function enableSubmit() {
+            var inputs = document.querySelectorAll('input');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value === '') return;
+            }
+            document.querySelector('#submitBtn').disabled = false;
+        }
+    </script>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" oninput="enableSubmit()">
+        <input type="password" name="password" placeholder="Password" oninput="enableSubmit()">
+        <button id="submitBtn" disabled>Login</button>
+    </form>
+</body>
+</html>
+
